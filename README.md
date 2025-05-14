@@ -69,4 +69,3 @@ Ensure you have a `.env` file in the backend directory with the following keys:
 ```plaintext
 AZURE_OPENAI_ENDPOINT=your_azure_openai_endpoint
 AZURE_OPENAI_API_KEY=your_azure_openai_api_key
-MONGO_URI=your_mongo_uri
