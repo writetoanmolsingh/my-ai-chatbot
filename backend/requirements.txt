@@ -1,0 +1,8 @@
+Flask
+flask-cors
+python-dotenv
+openai
+PyMuPDF
+pymongo
+requests
+markdown
