@@ -15,7 +15,7 @@ openai.api_base = os.getenv("AZURE_OPENAI_ENDPOINT")
 openai.api_version = "2024-12-01-preview"
 openai.api_key = os.getenv("AZURE_OPENAI_API_KEY")
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://localhost:3000"])
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 uploaded_texts = []
