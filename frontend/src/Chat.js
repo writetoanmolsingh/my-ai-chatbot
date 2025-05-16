@@ -28,7 +28,7 @@ const Chat = () => {
    setLoading(true);
    setQuery("");
    try {
-     const res = await axios.post("http://127.0.0.1:5000/chat/", { query });
+     const res = await axios.post("https://my-ai-chatbot-4vcx.onrender.com/chat/", { query });
      const botResponse = { 
        sender: "bot", 
        text: res.data.response, 
@@ -78,7 +78,7 @@ const Chat = () => {
      
      // Make a single request with all files
      const response = await axios.post(
-       "http://127.0.0.1:5000/upload/", 
+       "https://my-ai-chatbot-4vcx.onrender.com/upload/", 
        formData, 
        {
          headers: {
