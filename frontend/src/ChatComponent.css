@@ -636,15 +636,58 @@ body {
   body {
     position: fixed;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
   
   .app-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .main-content-area {
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .chat-messages-area {
+    padding: 16px;
+  }
+
+  .message-container {
+    max-width: 90%;
+  }
+
+  .chat-input-footer {
+    padding: 12px;
+  }
+
+  .chat-input-footer input[type="text"] {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .chat-input-footer button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .chat-panel-title-wrapper {
+    padding: 12px 16px;
+  }
+
+  .chat-panel-title {
+    font-size: 1.1rem;
   }
 }
 
@@ -716,6 +759,10 @@ body {
   }
   
   .app-container {
+    height: -webkit-fill-available;
+  }
+
+  .main-content-area {
     height: -webkit-fill-available;
   }
 } 
