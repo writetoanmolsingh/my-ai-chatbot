@@ -79,5 +79,3 @@ def chat():
    except Exception as e:
        logging.error(f"Chat API error: {str(e)}")
        return jsonify({"error": f"Chat API error: {str(e)}"}), 500
-if __name__ == "__main__":
-   app.run()
